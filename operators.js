@@ -32,3 +32,11 @@ console.log("a != b", a!=b);
 
   console.log("string value af b but use hard equal to then a === b is ", a===b) // when there is only 1 number then JS converts string into number and that's why we get value as true. 
 }
+
+// c) Ternary operator
+{
+let age = 20;
+
+result = age >= 18 ? "adult": "not adult";
+console.log(result)
+}
