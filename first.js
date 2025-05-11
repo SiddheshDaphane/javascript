@@ -6,5 +6,11 @@
   let age = 10;
   console.log(age);
 }
-const age=20;
-console.log("Age is: ",age);
+const student = {
+  fullName : "Siddhesh Daphane",
+  age: 20,
+  cgpa: 9.2,
+  isPass: true
+}
+
+student["age"] = student["age"] + 10
