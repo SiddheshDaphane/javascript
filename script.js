@@ -26,3 +26,13 @@ do {
   console.log("Daphane Siddhesh");
   j ++
 } while(j <= 5);
+
+// for-of loop
+
+let str = "JavaScript"
+let len = 0;
+for (let i of str){
+  console.log("i is",i);
+  len++
+}
+console.log("Length of a string is",len)
