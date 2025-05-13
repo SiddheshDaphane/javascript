@@ -57,3 +57,12 @@ for(let i=1; i<=100; i++){
     console.log("Number is odd");
   }
 }
+
+// guess the number
+let gameNum = 25;
+let userNum = prompt("Guess the game number : ");
+
+while(userNum != gameNum){
+  userNum = prompt("You entered wrong number, Guess again : ")
+}
+console.log(`Congrats. you entered right number which is ${userNum}`)
