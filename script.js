@@ -36,3 +36,15 @@ for (let i of str){
   len++
 }
 console.log("Length of a string is",len)
+
+// for-in loop (used of objects and arrays)
+let student = {
+  name: "Siddhesh Daphane",
+  age: 27,
+  cgpa: 4.0,
+  isPass: true
+}
+
+for(let key in student){
+  console.log("key is = ",key, " and it's value = ", student[key]);
+} 
