@@ -12,3 +12,10 @@ for (let i = 1; i<=5; i++){
   sum = sum + i;
 }
 console.log("sum is ",sum)
+
+// WHILE loop
+let i = 1;
+while(i <= 5){
+  console.log("Sidddhesh Daphane");
+  i++
+}
