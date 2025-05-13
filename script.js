@@ -19,3 +19,10 @@ while(i <= 5){
   console.log("Sidddhesh Daphane");
   i++
 }
+
+// do while loop (Even though condition is false, it will run once for sure because condition is check after 1st run)
+let j = 10
+do {
+  console.log("Daphane Siddhesh");
+  j ++
+} while(j <= 5);
