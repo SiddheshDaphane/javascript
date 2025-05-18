@@ -10,3 +10,10 @@ function myFunction1(msg) {
 }
 
 myFunction1("One piece")
+
+function Sum(a,b) {
+  s = a+b;
+  return s; 
+}
+result = Sum(1,2)
+console.log(result);
