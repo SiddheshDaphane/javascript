@@ -58,3 +58,13 @@ function countVo(msg){
   }
   console.log(count)
 }
+
+const Vowel_count = (msg) => {
+  let count = 0;
+  for (const i of msg){
+    if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u"){
+      count++
+    }
+  }
+  return count
+}
