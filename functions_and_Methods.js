@@ -96,3 +96,15 @@ let cals = (a) => {
 }
 
 ar.forEach(cals)
+
+// Array methods. 
+
+// 1. MAP (returns a new array but forEach doesn't returns a new array and that's the difference)
+
+let num = [100,200,300]
+
+newarr = num.map((val) => {
+  return val * val
+})
+console.log(newarr);
+console.log(num);
