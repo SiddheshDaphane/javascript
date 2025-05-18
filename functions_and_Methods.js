@@ -37,3 +37,24 @@ const arrowMul = (a,b) => {
 const arrowMul1 = (a,b) => {
   return(a*b)
 }
+
+// Count Vowels
+function countV(msg) {
+  let count = 0;
+  for (let i=0; i< msg.length; i++){
+    if (msg[i] === "a" || msg[i] === "e" || msg[i] === "i" || msg[i] === "o" || msg[i] === "u"){
+      count++
+    }
+  }
+  console.log(count)
+}
+
+function countVo(msg){
+  let count = 0;
+  for (const i of msg) {
+    if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u"){
+      count++
+    }
+  }
+  console.log(count)
+}
