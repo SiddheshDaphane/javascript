@@ -116,3 +116,11 @@ evenArray = no.filter((val) => {
   return val%2 === 0;
 })
 console.log(evenArray);
+
+// 3. Reduce (Performs some operations & reduces the array to a single value. It returns that single value)
+let arr1 = [1,2,3,4]
+
+const output = arr1.reduce((res, curr) => {
+  return res + curr
+})
+console.log(output);
