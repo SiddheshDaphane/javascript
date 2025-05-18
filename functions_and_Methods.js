@@ -68,3 +68,22 @@ const Vowel_count = (msg) => {
   }
   return count
 }
+
+// forEach() and callback function
+
+// let arr = [1,2,3,4,5]
+//   // arr.forEach(...) is a built-in array method in JavaScript.
+//   // It iterates over each element in the array, once per element, in order.
+//   // For each element, it calls the function printVal, passing that element as an argument.
+// arr.forEach(function printVal(val) {
+//   console.log(val)
+// })
+
+let arr = [1,2,3,4,5]
+arr.forEach((val) => {
+  console.log(val)
+})
+
+// arr.forEach(function(element, index, array) {
+//   console.log(element, index, array);
+// });
