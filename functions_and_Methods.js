@@ -108,3 +108,11 @@ newarr = num.map((val) => {
 })
 console.log(newarr);
 console.log(num);
+
+// 2. Filter 
+let no = [10,18,17,21,35,40,29]
+
+evenArray = no.filter((val) => {
+  return val%2 === 0;
+})
+console.log(evenArray);
