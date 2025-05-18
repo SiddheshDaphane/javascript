@@ -87,3 +87,12 @@ arr.forEach((val) => {
 // arr.forEach(function(element, index, array) {
 //   console.log(element, index, array);
 // });
+
+// Calculate square
+let ar = [1,2,3,4,5]
+
+let cals = (a) => {
+  console.log(a*a);
+}
+
+ar.forEach(cals)
