@@ -120,7 +120,14 @@ console.log(evenArray);
 // 3. Reduce (Performs some operations & reduces the array to a single value. It returns that single value)
 let arr1 = [1,2,3,4]
 
-const output = arr1.reduce((res, curr) => {
-  return res + curr
+const output = arr1.reduce((prev, curr) => {
+  return prev + curr
 })
 console.log(output);
+
+// find out the largest no 
+
+const max = arr1.reduce((prev, curr) => {
+  return prev > curr ? prev : curr
+})
+console.log(max)
