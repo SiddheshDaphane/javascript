@@ -11,3 +11,7 @@ console.dir(heading)
 // getting element with class in JS (returns HTML collection which is kind of array like structure.)
 let class_obj = document.getElementsByClassName("class-element")
 console.dir(class_obj)
+
+// getting elements with tag name (also returns HTML collections)
+let para = document.getElementsByName("p")
+console.dir(para)
