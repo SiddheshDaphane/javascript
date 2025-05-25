@@ -11,3 +11,8 @@ button {
 #heading {
   color: dodgerblue;
 }
+
+.class-element {
+  color: seagreen;
+  background-color: blue;
+}

@@ -8,3 +8,6 @@ console.log(document.head)
 let heading = document.getElementById("heading");
 console.dir(heading)
 
+// getting element with class in JS
+let class_obj = document.getElementsByClassName("class-element")
+console.dir(class_obj)
