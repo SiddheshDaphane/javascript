@@ -6,3 +6,8 @@ button {
   color: rgb(230, 93, 93);
   background-color: black;
 }
+
+/* using id to change the style*/
+#heading {
+  color: dodgerblue;
+}
