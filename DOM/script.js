@@ -15,3 +15,10 @@ console.dir(class_obj)
 // getting elements with tag name (also returns HTML collections)
 let para = document.getElementsByName("p")
 console.dir(para)
+
+// query selector (takes all input. id, class, tag)
+let firstElement = document.querySelector("p") // first element
+console.dir(firstElement)
+
+let allElements = document.querySelectorAll("p") // returns all elements
+console.dir(allElements)
