@@ -49,4 +49,15 @@ idx = 1
 for (let i of divs){ // here, "i" is div not a number and that's why we need to use "idx".
   i.innerText = `new unique value ${idx}`
   idx++
+};
+
+// getAttribute 
+let div = document.querySelectorAll("div");
+console.log(div);
+
+for (let i of div){
+  let cls = i.getAttribute("class");
+  console.log(cls)
+  let name = i.getAttribute("name");
+  console.log(name)
 }

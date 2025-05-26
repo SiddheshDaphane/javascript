@@ -31,3 +31,13 @@ button {
   margin: 5px;
   text-align: center;
 }
+
+.getAttribute {
+  color: rgb(242, 135, 5);
+  background-color: rgb(71, 68, 62);
+  height: 100px;
+  width: 100px;
+  border: 1px solid rgb(223, 12, 12);
+  margin: 5px;
+  text-align: center;
+}
