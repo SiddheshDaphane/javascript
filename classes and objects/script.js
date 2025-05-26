@@ -48,3 +48,27 @@ class ToyotaCar {
 
 let fortuner = new ToyotaCar();
 let lexus = new ToyotaCar();
+
+// constructor
+
+class Car {
+  constructor() {
+    console.log("Invoking constructor while creating a new object")
+  }
+
+  start() {
+    console.log("start")
+  }
+
+  stop() {
+    console.log("stop")
+  }
+
+  setBrand(brand) {
+    this.brand = brand;
+    console.log(brand);
+  }
+}
+
+let lambo = new Car();
+let ferrari = new Car();
