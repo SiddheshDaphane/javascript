@@ -22,3 +22,10 @@ console.dir(firstElement)
 
 let allElements = document.querySelectorAll("p") // returns all elements
 console.dir(allElements)
+
+// query selector by class
+let firstElementClass = document.querySelector(".class-element") // first element
+console.dir(firstElementClass)
+
+let allElementsClass = document.querySelectorAll(".class-element") // returns all elements
+console.dir(allElementsClass)
