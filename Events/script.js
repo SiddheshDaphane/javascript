@@ -22,7 +22,7 @@ btnEvent.onclick = (e) => {
   console.log(e.clientX, e.clientY);
 }
 
-// EventListener
+// Add EventListener
 let btnEl = document.querySelector("#btn")
 btnEl.addEventListener("click", (e) => {
   console.log("button was clicked!");
@@ -33,3 +33,21 @@ btnEl.addEventListener("click", (e) => {
   console.log("We can have multiple events on same element");
   console.log(e.type)
 })
+
+// Remove EventListener
+let dbtn = document.querySelector("#d")
+dbtn.addEventListener("click", () => {
+  console.log("Button was clicked - handler1")
+});
+dbtn.addEventListener("click", () => {
+  console.log("Button was clicked - handler2")
+});
+const handler3 = () => {
+  console.log("Button was clicked - handler3")
+};
+dbtn.addEventListener("click", handler3);
+dbtn.addEventListener("click", () => {
+  console.log("Button was clicked - handler4")
+});
+
+dbtn.removeEventListener("click", handler3);
