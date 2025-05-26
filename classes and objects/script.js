@@ -19,3 +19,12 @@ const siddhesh = {
 }
 
 siddhesh.__proto__ = employee; // employee object functions can be used in "siddhesh" object because of this line of code. 
+
+const karan = {
+  salary : 70000,
+  calcTax() {
+    console.log("tax rate is 20%")
+  }
+}
+
+karan.__proto__ = employee
