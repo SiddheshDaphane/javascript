@@ -86,3 +86,6 @@ stylediv.append(newButton);
 
 // 2. Add new button at the start
 stylediv.prepend(newButton)
+
+// 3. Add new button before node (outside)
+stylediv.before(newButton)
