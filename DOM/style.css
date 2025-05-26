@@ -41,3 +41,13 @@ button {
   margin: 5px;
   text-align: center;
 }
+
+.node {
+  color: rgb(33, 5, 242);
+  background-color: rgb(8, 237, 161);
+  height: 50px;
+  width: 100px;
+  border: 1px solid rgb(223, 12, 12);
+  margin: 5px;
+  text-align: center;
+}

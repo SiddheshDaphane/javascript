@@ -68,3 +68,8 @@ console.log(header.setAttribute("id", "qt"))
 
 let divv = document.querySelector("div")
 divv.setAttribute("class", "getAttribute")
+
+// node.style
+let stylediv = document.querySelector(".node")
+stylediv.style.backgroundColor = "red"
+stylediv.style.height = "100px"
