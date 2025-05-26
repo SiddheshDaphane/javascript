@@ -103,3 +103,9 @@ document.querySelector("body").prepend(h)
 let p = document.querySelector("p")
 p.remove();
 
+// Create a new class in CSS and try to append this class to <h3> element. Append means add, do not overwrite it. 
+let h3 = document.querySelector("h3")
+console.log(h3.classList) // only 1 class which is "content"
+
+h3.classList.add("newClass")
+console.log(h3.classList) // added new class which is "newClass"
