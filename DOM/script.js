@@ -92,3 +92,10 @@ stylediv.before(newButton);
 
 // 4. Add new button after the node
 stylediv.after(newButton);
+
+// creating a new heading
+let h = document.createElement("h1")
+h.innerHTML = "<i>This is new heading</i>"
+
+document.querySelector("body").prepend(h)
+
