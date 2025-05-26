@@ -36,3 +36,17 @@ console.dir(firstElementID)
 
 let allElementsID = document.querySelectorAll("#heading") // returns all elements
 console.dir(allElementsID)
+
+// Create a H2 heading element with text "Hello JavaScript". Append "Siddhesh Daphane" to this text using JS. 
+let q1 = document.querySelector("#qt")
+q1.innerText = q1.innerText + " Siddhesh Daphane"
+console.dir(q1.innerText)
+
+// Create 3 divs with common class name = "box". Access them and add some unique text to each of them. 
+let divs = document.querySelectorAll(".box")
+console.dir(divs[0].innerText)
+idx = 1
+for (let i of divs){ // here, "i" is div not a number and that's why we need to use "idx".
+  i.innerText = `new unique value ${idx}`
+  idx++
+}

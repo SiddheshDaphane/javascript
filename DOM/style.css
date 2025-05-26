@@ -16,3 +16,18 @@ button {
   color: seagreen;
   background-color: blue;
 }
+
+#qt {
+  color: tomato;
+  background-color: slategray;
+}
+
+.box {
+  color: bisque;
+  background-color: darkgoldenrod;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 5px;
+  text-align: center;
+}
