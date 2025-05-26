@@ -85,7 +85,10 @@ console.log(newButton.innerText)
 stylediv.append(newButton);
 
 // 2. Add new button at the start
-stylediv.prepend(newButton)
+stylediv.prepend(newButton);
 
 // 3. Add new button before node (outside)
-stylediv.before(newButton)
+stylediv.before(newButton);
+
+// 4. Add new button after the node
+stylediv.after(newButton);
