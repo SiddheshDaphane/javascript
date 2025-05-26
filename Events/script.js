@@ -21,3 +21,15 @@ btnEvent.onclick = (e) => {
   console.log(e.target);
   console.log(e.clientX, e.clientY);
 }
+
+// EventListener
+let btnEl = document.querySelector("#btn")
+btnEl.addEventListener("click", (e) => {
+  console.log("button was clicked!");
+  console.log(e.type);
+});
+
+btnEl.addEventListener("click", (e) => {
+  console.log("We can have multiple events on same element");
+  console.log(e.type)
+})
