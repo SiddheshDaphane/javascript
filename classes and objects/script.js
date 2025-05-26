@@ -28,3 +28,23 @@ const karan = {
 }
 
 karan.__proto__ = employee
+
+// Class
+
+class ToyotaCar {
+  start() {
+    console.log("start")
+  }
+
+  stop() {
+    console.log("stop")
+  }
+
+  setBrand(brand) {
+    this.brand = brand;
+    console.log(brand);
+  }
+}
+
+let fortuner = new ToyotaCar();
+let lexus = new ToyotaCar();
