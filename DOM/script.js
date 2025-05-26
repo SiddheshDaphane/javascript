@@ -99,3 +99,7 @@ h.innerHTML = "<i>This is new heading</i>"
 
 document.querySelector("body").prepend(h)
 
+// Removing element
+let p = document.querySelector("p")
+p.remove();
+
