@@ -5,3 +5,13 @@
   color: rgb(252, 107, 54);
   background-color: burlywood;
 }
+
+.dark{
+  background-color: black;
+  color: bisque;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}

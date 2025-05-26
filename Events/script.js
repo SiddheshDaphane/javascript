@@ -51,3 +51,23 @@ dbtn.addEventListener("click", () => {
 });
 
 dbtn.removeEventListener("click", handler3);
+
+
+// Create a toggle button that changes the screen to dark-mode when clicked and light mode when clicked again
+let mode = document.querySelector("#mode");
+let body = document.querySelector("body");
+let currMode = "light";
+
+mode.addEventListener("click", () => {
+  if (currMode === "light"){
+    currMode = "dark";
+    body.classList.remove("light");
+    body.classList.add("dark");
+  } else {
+    currMode = "light";
+    body.classList.remove("dark");
+    body.classList.add("light");
+  }
+
+  console.log(currMode);
+})
