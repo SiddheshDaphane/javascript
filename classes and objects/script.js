@@ -99,3 +99,22 @@ class Car1 {
 
 let maruti = new Car1("4 stroke", 24);
 let honda = new Car1("vtech", 19);
+
+// Inheritance
+class Person {
+  eat() {
+    console.log("eat");
+  }
+
+  sleep() {
+    console.log("sleep");
+  }
+}
+
+class Engineer extends Person {
+  work() {
+    console.log("solve problems, build something");
+  }
+}
+
+let siddheshobj = new Engineer();
