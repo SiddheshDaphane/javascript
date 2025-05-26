@@ -29,3 +29,10 @@ console.dir(firstElementClass)
 
 let allElementsClass = document.querySelectorAll(".class-element") // returns all elements
 console.dir(allElementsClass)
+
+// query selector with id 
+let firstElementID = document.querySelector("#heading") // first element
+console.dir(firstElementID)
+
+let allElementsID = document.querySelectorAll("#heading") // returns all elements
+console.dir(allElementsID)
