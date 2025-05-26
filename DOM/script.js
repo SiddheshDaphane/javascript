@@ -72,4 +72,14 @@ divv.setAttribute("class", "getAttribute")
 // node.style
 let stylediv = document.querySelector(".node")
 stylediv.style.backgroundColor = "red"
-stylediv.style.height = "100px"
+stylediv.style.height = "250px"
+
+// inserting new element
+ // Adding a new button after ".node" div
+
+let newButton = document.createElement("button")
+newButton.innerText = "added new button"
+console.log(newButton.innerText)
+
+// 1. Add new button at the end of a node. 
+stylediv.append(newButton);
