@@ -122,8 +122,9 @@ let siddheshobj = new Engineer();
 // SUPER keyword
 
 class Person1 {
-  constructor() {
-    this.species = "homo sapiens"
+  constructor(name) {
+    this.species = "homo sapiens",
+    this.name = name
   }
   eat() {
     console.log("eat");
@@ -135,8 +136,8 @@ class Person1 {
 }
 
 class Engineer1 extends Person1 {
-  constructor(branch) {
-    super() // to invoke parent class constructor
+  constructor(name, branch) {
+    super(name) // to invoke parent class constructor
     this.branch = branch
   }
   work() {
@@ -144,4 +145,4 @@ class Engineer1 extends Person1 {
   }
 }
 
-let siddheshobj1 = new Engineer1("Mechanical");
+let siddheshobj1 = new Engineer1("siddhesh","Mech");
