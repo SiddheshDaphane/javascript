@@ -118,3 +118,30 @@ class Engineer extends Person {
 }
 
 let siddheshobj = new Engineer();
+
+// SUPER keyword
+
+class Person1 {
+  constructor() {
+    this.species = "homo sapiens"
+  }
+  eat() {
+    console.log("eat");
+  }
+
+  sleep() {
+    console.log("sleep");
+  }
+}
+
+class Engineer1 extends Person1 {
+  constructor(branch) {
+    super() // to invoke parent class constructor
+    this.branch = branch
+  }
+  work() {
+    console.log("solve problems, build something");
+  }
+}
+
+let siddheshobj1 = new Engineer1("Mechanical");
