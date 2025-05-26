@@ -61,3 +61,10 @@ for (let i of div){
   let name = i.getAttribute("name");
   console.log(name)
 }
+
+//setAttribute 
+let header = document.querySelector("h1")
+console.log(header.setAttribute("id", "qt"))
+
+let divv = document.querySelector("div")
+divv.setAttribute("class", "getAttribute")
