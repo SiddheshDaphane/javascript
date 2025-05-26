@@ -83,3 +83,6 @@ console.log(newButton.innerText)
 
 // 1. Add new button at the end of a node. 
 stylediv.append(newButton);
+
+// 2. Add new button at the start
+stylediv.prepend(newButton)
