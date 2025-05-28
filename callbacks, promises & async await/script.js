@@ -58,7 +58,7 @@ data(100, () => {
   })
 })
 
-using promise.then and promise.catch
+// using promise.then and promise.catch
 
 const getPromise = () => {
   return new Promise((resolve, reject) => {
@@ -76,4 +76,30 @@ prom.then((res) => {
 
 prom.catch((err) => {
   console.log("rejected - ", err)
+})
+
+// Promise chain (VIMP concept and need to take a look at it again)
+
+function asyncFunc1() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data1");
+      resolve("success")
+    },4000)
+  })
+}
+
+function asyncFunc2() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data2")
+      resolve("sucess")
+    }, 4000)
+  })
+}
+
+console.log("fetching data1......");
+asyncFunc1().then((res)=> {
+  console.log("fetching data2....");
+  asyncFunc2().then((res)=> {});
 })
