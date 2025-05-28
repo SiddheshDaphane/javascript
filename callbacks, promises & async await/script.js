@@ -29,3 +29,11 @@ getDataHell(1, () => {
     })
   })
 }) 
+
+// Promise
+
+let promise = new Promise((resolve, reject) => {
+  console.log("This is promise");
+  resolve("promise is resolved"); // This is for state resolved 
+  reject("Promise is rejected!"); // This is for state rejected. 
+})
