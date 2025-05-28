@@ -21,8 +21,11 @@ function getDataHell(dataId, getNextData) {
   },2000)
 }
 
+// This is callback hell. 
 getDataHell(1, () => {
   getDataHell(2, () => {
-    getDataHell(3)
+    getDataHell(3, () => {
+      getDataHell(4)
+    })
   })
 }) 
