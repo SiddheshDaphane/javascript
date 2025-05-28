@@ -37,3 +37,23 @@ let promise = new Promise((resolve, reject) => {
   resolve("promise is resolved"); // This is for state resolved 
   reject("Promise is rejected!"); // This is for state rejected. 
 })
+
+function data(dataId, getNextData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data", dataId);
+      resolve("success")
+      if (getNextData) {
+        getNextData();
+      }
+    }, 5000)
+  })
+}
+
+data(100, () => {
+  data(200, () => {
+    data(300, () => {
+      data(400)
+    })
+  })
+})
