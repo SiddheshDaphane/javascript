@@ -57,3 +57,23 @@ data(100, () => {
     })
   })
 })
+
+using promise.then and promise.catch
+
+const getPromise = () => {
+  return new Promise((resolve, reject) => {
+    console.log("I am a promise");
+    resolve("success"); // comment this line out to see "reject" result.
+    reject("Network Error")
+  });
+};
+
+let prom = getPromise();
+
+prom.then((res) => {
+  console.log("promise fulfilled", res)
+})
+
+prom.catch((err) => {
+  console.log("rejected - ", err)
+})
