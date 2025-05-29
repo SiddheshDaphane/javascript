@@ -38,17 +38,17 @@
 //   reject("Promise is rejected!"); // This is for state rejected. 
 // })
 
-// function data(dataId, getNextData) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("data", dataId);
-//       resolve("success")
-//       if (getNextData) {
-//         getNextData();
-//       }
-//     }, 5000)
-//   })
-// }
+function data(dataId, getNextData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data", dataId);
+      resolve("success")
+      if (getNextData) {
+        getNextData();
+      }
+    }, 5000)
+  })
+}
 
 
 // data(100, () => {
@@ -129,4 +129,13 @@ function api() {
 async function getWeatherData() {
   await api();
   await api();
+}
+
+async function getAllData() {
+  console.log("getting data1......")
+  await data(1);
+  console.log("getting data2......")
+  await data(2);
+  console.log("getting data3......")
+  await data(3);
 }
