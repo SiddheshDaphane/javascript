@@ -50,6 +50,7 @@ function data(dataId, getNextData) {
   })
 }
 
+
 data(100, () => {
   data(200, () => {
     data(300, () => {
@@ -57,6 +58,16 @@ data(100, () => {
     })
   })
 })
+
+// using Promise
+data(1).then((res) => {
+  return data(2)
+}).then((res)=> {
+  return data(3)
+}).then((res) => {
+  console.log(res)
+})
+
 
 // using promise.then and promise.catch
 
