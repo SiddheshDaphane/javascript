@@ -139,3 +139,13 @@ async function getAllData() {
   console.log("getting data3......")
   await data(3);
 }
+
+// IIFE's
+(async function () {
+  console.log("getting data1......")
+  await data(1);
+  console.log("getting data2......")
+  await data(2);
+  console.log("getting data3......")
+  await data(3);
+})();
