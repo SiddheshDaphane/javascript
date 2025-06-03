@@ -61,3 +61,22 @@ for (let [key, value] of Object.entries(user)) {
 
 
 // 5. "for..of" Loop - Loop over iterable values (Array, Strings, Maps)
+const colors = ["red","green","blue"];
+for (const color of colors){
+  console.log(`for-of loop which loops on values and not on indices of array and values are ${color}`);
+}
+
+for (const i in colors){
+  console.log(`Using for-in loop, I will get indices of array not actual values of it. ${i}`)
+}
+
+// 6. "forEach() - Functional Array Loop"
+const score = [85,90,78];
+score.forEach((score, index) => {
+  console.log(`forEach functional Array loop and Score #${index + 1}: ${score}`); 
+})
+
+// 7. "map()" - Transform each element into a New Array
+const numbers = [1,2,3];
+const squared = numbers.map(num => num * num);
+console.log(squared)
